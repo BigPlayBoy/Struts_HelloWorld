@@ -6,8 +6,9 @@ public class HelloWorldAction extends ActionSupport {
 
 	@Override
 	public String execute() throws Exception {
-		// TODO Auto-generated method stub
-		return super.execute();
+		System.out.println("执行Action");
+		return SUCCESS;
+		
 	}
 
 	
