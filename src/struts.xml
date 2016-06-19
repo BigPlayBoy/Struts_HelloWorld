@@ -3,10 +3,11 @@
    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
    "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
+
 	<package name="default" namespace="/" extends="struts-default">
 		<action name="helloworld" class="com.imooc.action.HelloWorldAction">
 		<result>/result.jsp</result>
-		
+		<result name="11">/index.jsp</result>
 		
 		</action>
 	</package>

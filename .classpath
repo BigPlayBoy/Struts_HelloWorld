@@ -21,5 +21,6 @@
 	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/ognl-3.0.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/struts2-core-2.3.24.jar"/>
 	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/xwork-core-2.3.24.jar"/>
+	<classpathentry exported="true" kind="lib" path="WebRoot/WEB-INF/lib/javassist-3.11.0.GA.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
