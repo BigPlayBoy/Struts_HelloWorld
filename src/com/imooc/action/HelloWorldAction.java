@@ -2,6 +2,7 @@ package com.imooc.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 
+@SuppressWarnings("serial")
 public class HelloWorldAction extends ActionSupport {
 
 	@Override
