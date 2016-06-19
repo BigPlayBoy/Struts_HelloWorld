@@ -4,12 +4,7 @@
    "http://struts.apache.org/dtds/struts-2.0.dtd">
 <struts>
 
-	<package name="default" namespace="/" extends="struts-default">
-		<action name="helloworld" class="com.imooc.action.HelloWorldAction">
-		<result>/result.jsp</result>
-		
-		
-		</action>
-	</package>
-
+	<include file="helloworld.xml"></include>
+	<!-- 变换struts 后缀    不配置这句话 action也可以不写-->
+	<!--  <constant name="struts.action.extension" value=""></constant>-->
 </struts>

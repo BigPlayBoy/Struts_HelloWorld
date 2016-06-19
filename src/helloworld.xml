@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="default" namespace="/" extends="struts-default">
+		<!-- index 是action的名称 -->
+		<default-action-ref name="index">
+		</default-action-ref>
+
+		<action name="index">
+			<result>/error.jsp</result>
+		</action>
+
+		<action name="helloworld_*" method="{1}"
+			class="com.imooc.action.HelloWorldAction">
+			<result>/result.jsp</result>
+			<result name="add">/{1}.jsp</result>
+			<result name="update">/{1}.jsp</result>
+		</action>
+
+		<action name="LoginAction" method="login"
+			class="com.imooc.action.LoginAction">
+			<result>/success.jsp</result>
+		</action>
+
+
+		<!-- <action name="addAction" method="add" class="com.imooc.action.HelloWorldAction"> 
+			<result>/add.jsp</result> </action> <action name="updateAction" method="update" 
+			class="com.imooc.action.HelloWorldAction"> <result>/update.jsp</result> </action> -->
+
+	</package>
+	<!-- 指定字符编码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+</struts>

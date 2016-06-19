@@ -12,6 +12,15 @@ public class HelloWorldAction extends ActionSupport {
 		
 	}
 
-	
+	public String add(){
+		System.out.println("执行add");
+		return "add";
+		
+	}
+	public String update(){
+		System.out.println("执行update");
+		return "update";
+		
+	}
 	
 }
