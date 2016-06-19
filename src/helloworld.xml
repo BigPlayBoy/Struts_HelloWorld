@@ -23,6 +23,7 @@
 		<action name="LoginAction" method="login"
 			class="com.imooc.action.LoginAction">
 			<result>/success.jsp</result>
+			<result name="input">/login.jsp</result>
 		</action>
 
 

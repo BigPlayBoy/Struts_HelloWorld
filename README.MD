@@ -35,6 +35,19 @@ Action的搜索顺序
 	3.使用ModelDriven接收参数  实现 ModelDriven接口 实例化对象   jsp文件中不需要指定user
 	推荐使用第三种
 	
+	处理结果类型： (name中小写)
+		1 SUCCESS：Action正确的执行完成，返回相应的视图，success是name属性的默认值
+		2.NONE：表示action正确的执行完成，但并不返回任何视图
+		3.ERROR：执行action失败，返回到错误处理视图
+		4.LOGIN：action因为用户没有登陆的原因没有正确执行，将返回该登陆视图，要求用户进行登陆验证
+		5.INPUT：action的执行，需要从前端页面获取参数，input就是代表这是个参数输入的界面，一般在应用中，会对这些参数进行验证，如果验证没有通过，将自动返回到该视图
+		根据位置的不同 分为两种结果
+			局部结果：将<result/>作为<action/>元素的子元素配置
+			全局结果：将<result/>作为<global-result/>元素的子元素配置
+		
+		
+		
+	
 	
 		
 
