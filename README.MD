@@ -45,7 +45,18 @@ Action的搜索顺序
 			局部结果：将<result/>作为<action/>元素的子元素配置
 			全局结果：将<result/>作为<global-result/>元素的子元素配置
 		
-		
+Struts2拦截器
+	1.自定义拦截器
+		1.实现Interceptor接口
+			-init() ：初始化拦截器所需资源	
+			-destory(): 释放在init中分配的资源
+			-String intercept(ActionInvocation ai)throws Exception
+				实现拦截器功能
+				利用ActionInvocation参数获取Action状态
+				返回result字符串作为逻辑视图
+	2.继承AbstractInterceptor类
+		提供了init()和destory()方法的空实现
+		只需要实现intercept方法即可
 		
 	
 	
