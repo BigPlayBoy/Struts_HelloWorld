@@ -7,7 +7,7 @@
 	<package name="default" namespace="/" extends="struts-default">
 		<action name="helloworld" class="com.imooc.action.HelloWorldAction">
 		<result>/result.jsp</result>
-		<result name="11">/index.jsp</result>
+		
 		
 		</action>
 	</package>
